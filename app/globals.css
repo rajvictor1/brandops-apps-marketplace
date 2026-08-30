@@ -5,20 +5,21 @@
 @tailwind utilities;
 
 :root {
-  --brand-bg: #0a0a0f;
-  --brand-card: #12121a;
-  --brand-border: #1f1f2e;
-  --brand-primary: #6366f1;
-  --brand-accent: #22d3ee;
-  --brand-muted: #9ca3af;
-  --brand-heading: #f9fafb;
+  --brand-bg: #020617;
+  --brand-card: #0f172a;
+  --brand-border: rgba(255, 255, 255, 0.1);
+  --brand-primary: #4f46e5;
+  --brand-primary-hover: #4338ca;
+  --brand-muted: #94a3b8;
+  --brand-heading: #f8fafc;
 }
 
 * {
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   background-color: var(--brand-bg);
   color: var(--brand-heading);
   font-family: 'Inter', system-ui, sans-serif;
@@ -43,6 +44,10 @@ button {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--brand-border);
+  background: #334155;
   border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #475569;
 }
